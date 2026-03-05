@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family:-apple-system,Segoe UI,Roboto;
+font-family:system-ui;
 background:#0f172a;
 color:#e2e8f0;
 }
@@ -32,12 +32,11 @@ align-items:center;
 margin-top:60px;
 }
 
-.hero-img img{
+.hero-right img{
 width:180px;
 height:180px;
 border-radius:50%;
 object-fit:cover;
-object-position:center 30%;
 border:4px solid #8b5cf6;
 }
 
@@ -48,70 +47,59 @@ color:#8b5cf6;
 .hero-buttons{
 margin-top:20px;
 display:flex;
-gap:12px;
+gap:14px;
 }
 
-.social-links{
-margin-top:15px;
+.btn-primary{
+background:#8b5cf6;
+color:white;
+padding:10px 16px;
+border-radius:6px;
+text-decoration:none;
+}
+
+.btn-outline{
+border:1px solid #8b5cf6;
+color:#8b5cf6;
+padding:10px 16px;
+border-radius:6px;
+text-decoration:none;
+}
+
+.social{
+margin-top:16px;
 display:flex;
-gap:18px;
+gap:16px;
 }
 
-.social-links a{
+.social a{
 color:#8b5cf6;
 text-decoration:none;
 }
 
 .section{
-margin-top:90px;
+margin-top:80px;
 }
 
-.metrics{
-display:flex;
-gap:40px;
-margin-top:20px;
-}
-
-.projects{
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:30px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.project-card{
+.card{
 background:#020617;
 padding:20px;
-border-radius:10px;
+border-radius:8px;
 border:1px solid #1e293b;
-}
-
-.project-card:hover{
-border-color:#8b5cf6;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
 }
 
 .contact{
 text-align:center;
 }
 
-.btn{
-padding:10px 16px;
-border-radius:6px;
-text-decoration:none;
-}
-
-.primary{
-background:#8b5cf6;
-color:white;
-}
-
-.secondary{
-border:1px solid #8b5cf6;
-color:#8b5cf6;
+footer{
+margin-top:60px;
+text-align:center;
+opacity:0.6;
 }
