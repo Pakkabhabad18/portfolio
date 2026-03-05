@@ -1,116 +1,210 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Prakash Bhabad | Product Portfolio</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
-max-width:900px;
-margin:auto;
-padding:40px;
-line-height:1.6;
-background:#fafafa;
+font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+margin:0;
+background:#f6f7fb;
+color:#222;
 }
 
-h1,h2,h3{
-color:#111;
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:20px;
+font-size:14px;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:40px;
+}
+
+.hero-text h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:16px;
+color:#555;
+max-width:450px;
+}
+
+.hero img{
+width:160px;
+border-radius:50%;
+box-shadow:0 8px 30px rgba(0,0,0,0.15);
 }
 
 .section{
-margin-top:50px;
+margin-top:80px;
+}
+
+.section h2{
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
-padding:20px;
-margin-top:20px;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.06);
+padding:22px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card h3{
+margin-top:0;
 }
 
 .tag{
 display:inline-block;
-background:#f0f0f0;
-padding:4px 10px;
-margin:4px;
-border-radius:4px;
-font-size:13px;
+background:#eef1ff;
+padding:5px 10px;
+border-radius:6px;
+font-size:12px;
+margin-top:8px;
+margin-right:5px;
+}
+
+.footer{
+margin-top:80px;
+padding:40px;
+text-align:center;
+background:white;
+}
+
+.footer a{
+text-decoration:none;
+color:#3b5cff;
+margin:0 10px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>Prakash Bhabad</h1>
-<p><b>Product Portfolio</b></p>
+<nav>
+
+<b>Prakash Bhabad</b>
+
+<div>
+<a href="#process">Process</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<div class="container">
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm Prakash 👋</h1>
 
 <p>
-Product management student at IIIT Hyderabad interested in building data-driven products.
-My work focuses on understanding user problems, validating ideas through research,
-and designing scalable product solutions.
+Product Management student at IIIT Hyderabad interested in building
+data-driven products. I enjoy understanding user problems,
+validating ideas through research, and designing scalable product solutions.
 </p>
 
-<div class="section">
+</div>
+
+<img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4">
+
+</div>
+
+
+<div class="section" id="process">
 
 <h2>My Product Process</h2>
 
-<div class="card">
-<b>Discover</b><br>
-User interviews, stakeholder mapping, research
-</div>
+<div class="grid">
 
 <div class="card">
-<b>Define</b><br>
-Problem framing, personas, opportunity areas
+<b>🔍 Discover</b>
+<p>User interviews, stakeholder mapping, research</p>
 </div>
 
 <div class="card">
-<b>Ideate</b><br>
-Solution exploration and feature prioritization
+<b>🧠 Define</b>
+<p>Problem framing, opportunity identification</p>
 </div>
 
 <div class="card">
-<b>Test</b><br>
-Prototyping, usability testing, feedback loops
+<b>💡 Ideate</b>
+<p>Solution exploration and feature prioritization</p>
 </div>
 
 <div class="card">
-<b>Measure</b><br>
-Metrics, experiments, iteration
+<b>🧪 Test</b>
+<p>Usability testing and feedback</p>
+</div>
+
+<div class="card">
+<b>📈 Measure</b>
+<p>Metrics, experiments, iteration</p>
 </div>
 
 </div>
 
+</div>
 
-<div class="section">
+
+
+<div class="section" id="projects">
 
 <h2>Selected Projects</h2>
 
+<div class="grid">
+
 <div class="card">
+
 <h3>Continuum — Workforce Intelligence Platform</h3>
 
 <p>
-Organizations invest heavily in employee engagement but struggle to measure
-its impact on retention and workforce performance.
+B2B workforce intelligence platform linking employee engagement
+initiatives to measurable business outcomes.
 </p>
 
-<b>Goal</b>
-<p>Design a platform connecting engagement initiatives with measurable business outcomes.</p>
-
-<b>Key Product Metrics</b>
-<ul>
-<li>Participation heatmaps</li>
-<li>Attrition risk indicators</li>
-<li>Retention correlation metrics</li>
-</ul>
-
-<span class="tag">Product Strategy</span>
-<span class="tag">B2B</span>
-<span class="tag">Analytics</span>
+<div class="tag">Product Strategy</div>
+<div class="tag">B2B</div>
+<div class="tag">Analytics</div>
 
 </div>
 
@@ -120,37 +214,26 @@ its impact on retention and workforce performance.
 <h3>Visitor Experience Improvement</h3>
 
 <p>
-Research-driven service design project to improve visitor experience.
+Service design project improving visitor experience through
+50+ stakeholder interviews and workflow mapping.
 </p>
 
-<ul>
-<li>Conducted 50+ stakeholder interviews</li>
-<li>Mapped service workflows</li>
-<li>Identified friction points</li>
-</ul>
-
-<span class="tag">User Research</span>
-<span class="tag">Service Design</span>
+<div class="tag">User Research</div>
+<div class="tag">Service Design</div>
 
 </div>
 
 
 <div class="card">
 
-<h3>CivicVoice — Civic Issue Reporting Platform</h3>
+<h3>CivicVoice — Issue Reporting Platform</h3>
 
 <p>
-Platform enabling citizens to report civic issues and track resolution progress.
+Platform enabling citizens to report civic issues and track resolution.
 </p>
 
-<ul>
-<li>Defined MVP features</li>
-<li>Designed reporting workflow</li>
-<li>Conducted usability testing</li>
-</ul>
-
-<span class="tag">Product Design</span>
-<span class="tag">MVP</span>
+<div class="tag">Product Design</div>
+<div class="tag">MVP</div>
 
 </div>
 
@@ -160,32 +243,38 @@ Platform enabling citizens to report civic issues and track resolution progress.
 <h3>Advertising Impact Study</h3>
 
 <p>
-Experiment analyzing drivers of purchase intention.
+Experiment analyzing drivers of purchase intention across
+120+ survey participants.
 </p>
 
-<ul>
-<li>Survey with 120+ participants</li>
-<li>Regression and statistical analysis</li>
-<li>Storytelling explained ~50% purchase variation</li>
-</ul>
+<div class="tag">Experiments</div>
+<div class="tag">Analytics</div>
 
-<span class="tag">Experiment</span>
-<span class="tag">Analytics</span>
+</div>
 
 </div>
 
 </div>
 
 
-<div class="section">
+<div class="footer" id="contact">
 
-<h2>Contact</h2>
+<h2>Let's Connect</h2>
 
-<p>Email: pakkabhabad@gmail.com</p>
-<p>LinkedIn: https://linkedin.com/in/prakash-bhabad</p>
-<p>GitHub: https://github.com/Pakkabhabad18</p>
+<p>
+
+<a href="mailto:pakkabhabad@gmail.com">Email</a>
+
+<a href="https://linkedin.com/in/prakash-bhabad">LinkedIn</a>
+
+<a href="https://github.com/Pakkabhabad18">GitHub</a>
+
+</p>
+
+</div>
 
 </div>
 
 </body>
+
 </html>
