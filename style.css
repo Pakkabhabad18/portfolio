@@ -1,121 +1,460 @@
-body{
-margin:0;
-font-family:-apple-system,Segoe UI,Roboto;
-background:#0f172a;
-color:#e2e8f0;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
+<head>
 
-.nav{
-display:flex;
-justify-content:space-between;
-padding:20px 40px;
-background:#020617;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-.nav a{
-margin-left:20px;
-color:#cbd5f5;
-text-decoration:none;
-}
+<title>Prakash Bhabad | Product Portfolio</title>
 
-.hero{
-display:grid;
-grid-template-columns:1fr 200px;
-gap:60px;
-align-items:center;
-margin-top:60px;
-}
+<link rel="stylesheet" href="style.css">
 
-.hero-img img{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #8b5cf6;
-}
-.hero-buttons{
-margin-top:18px;
-display:flex;
-gap:12px;
-}
+</head>
 
-h1 span{
-color:#8b5cf6;
-}
 
-.section{
-margin-top:90px;
-}
+<body>
 
-.metrics{
-display:flex;
-gap:40px;
-margin-top:20px;
-}
 
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:30px;
-}
+<nav class="nav">
 
-.project-card{
-background:#020617;
-padding:20px;
-border-radius:10px;
-border:1px solid #1e293b;
-}
+<div class="logo">Prakash Bhabad</div>
 
-.project-card:hover{
-border-color:#8b5cf6;
-}
+<div class="nav-links">
 
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#thinking">Process</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
 
-.contact{
-text-align:center;
-}
+</div>
 
-.btn{
-padding:10px 16px;
-border-radius:6px;
-text-decoration:none;
-}
+</nav>
 
-.primary{
-background:#8b5cf6;
-color:white;
-}
 
-.secondary{
-border:1px solid #8b5cf6;
-color:#8b5cf6;
-}
-.social-links{
-margin-top:18px;
-display:flex;
-gap:16px;
-align-items:center;
-}
 
-.social-links a{
-color:#8b5cf6;
-text-decoration:none;
-font-size:14px;
-font-weight:500;
-}
+<div class="container">
 
-.social-links a:hover{
-text-decoration:underline;
-}
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<p class="tag">Product Management • Data Driven</p>
+
+<h1>
+Building Products That Solve
+<span>Real User Problems</span>
+</h1>
+
+<p class="intro">
+
+M.Tech Product Design & Management student at IIIT Hyderabad.
+Interested in building data-driven products, understanding user behaviour,
+and designing scalable solutions through product strategy and research.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a class="btn primary" href="#projects">
+View Projects
+</a>
+
+<a class="btn secondary"
+href="projects/Spotify Wrapped case study PPT.pdf"
+target="_blank">
+Featured Case Study
+</a>
+
+</div>
+
+
+<div class="social-links">
+
+<a href="mailto:pakkabhabad@gmail.com">
+Email
+</a>
+
+<a href="https://www.linkedin.com/in/prakash-bhabad-2b9320188/"
+target="_blank">
+LinkedIn
+</a>
+
+<a href="https://github.com/Pakkabhabad18"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-img">
+
+<img src="assets/My_Photo.jpg" alt="Prakash Bhabad">
+
+</div>
+
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<p>
+
+Aspiring Product Manager with background in Data Science and Engineering.
+Passionate about user research, experimentation and building scalable products.
+Currently pursuing M.Tech in Product Design & Management at IIIT Hyderabad.
+
+</p>
+
+
+<div class="metrics">
+
+<div class="metric">
+<h3>120+</h3>
+<p>Users analysed in experiments</p>
+</div>
+
+<div class="metric">
+<h3>50+</h3>
+<p>Stakeholder interviews</p>
+</div>
+
+<div class="metric">
+<h3>15%</h3>
+<p>Stock-out reduction through analytics</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section">
+
+<h2>Experience</h2>
+
+<div class="experience-card">
+
+<h3>Data Science Intern — Orange Business</h3>
+
+<p class="date">Feb 2023 – Aug 2023</p>
+
+<ul>
+
+<li>Automated supply chain reporting pipelines using Python and SQL</li>
+
+<li>Built Power BI dashboards tracking key supply chain metrics</li>
+
+<li>Analysed demand patterns reducing stock-outs by 15%</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<!-- PRODUCT PROCESS -->
+
+<section id="thinking" class="section">
+
+<h2>My Product Process</h2>
+
+<div class="thinking-grid">
+
+<div class="thinking-card">
+
+<h4>🔍 Discover</h4>
+<p>User interviews, stakeholder mapping, research</p>
+
+</div>
+
+
+<div class="thinking-card">
+
+<h4>🧠 Define</h4>
+<p>Problem framing and opportunity identification</p>
+
+</div>
+
+
+<div class="thinking-card">
+
+<h4>💡 Ideate</h4>
+<p>Solution exploration and feature prioritisation</p>
+
+</div>
+
+
+<div class="thinking-card">
+
+<h4>🧪 Test</h4>
+<p>Prototyping, usability testing and feedback</p>
+
+</div>
+
+
+<div class="thinking-card">
+
+<h4>📊 Measure</h4>
+<p>Metrics, experiments and iteration</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+
+<h2>Featured Projects</h2>
+
+
+<div class="projects">
+
+
+<div class="project-card">
+
+<h3>Spotify Wrapped – Product Engagement Strategy</h3>
+
+<p>
+
+Case study analysing how Spotify leverages personalisation and
+social sharing to increase engagement.
+
+</p>
+
+<a href="projects/Spotify Wrapped case study PPT.pdf"
+target="_blank">
+Slides →
+</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>Continuum – Workforce Intelligence Platform</h3>
+
+<p>
+
+B2B workforce intelligence platform linking employee engagement
+initiatives with measurable business outcomes.
+
+</p>
+
+<a href="projects/Continuum Final Presentation.pdf"
+target="_blank">
+Presentation →
+</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>CivicVoice – Civic Issue Reporting Platform</h3>
+
+<p>
+
+Platform enabling citizens to report civic issues
+and track resolution transparently.
+
+</p>
+
+<a href="projects/CivicVoice Report.pdf"
+target="_blank">
+Report
+</a>
+
+<a href="projects/CivicVoice.pdf"
+target="_blank">
+Slides
+</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>Advertising Impact Study</h3>
+
+<p>
+
+Experiment analysing drivers of purchase intention
+across 120+ participants.
+
+</p>
+
+<a href="projects/URM_Group_5.pdf"
+target="_blank">
+Report →
+</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>Design Thinking – IDEARC Project</h3>
+
+<p>
+
+Human-centred design project applying the design thinking
+framework to solve real user problems.
+
+</p>
+
+<a href="projects/Idearc_ppt.pdf"
+target="_blank">
+Presentation
+</a>
+
+<a href="projects/Idearc_poster.png"
+target="_blank">
+Poster
+</a>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div>
+
+<h4>Product</h4>
+
+<ul>
+
+<li>User Research</li>
+<li>Product Strategy</li>
+<li>MVP Definition</li>
+<li>Feature Prioritisation</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Analytics</h4>
+
+<ul>
+
+<li>Python</li>
+<li>SQL</li>
+<li>Power BI</li>
+<li>Pandas / NumPy</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Tools</h4>
+
+<ul>
+
+<li>Git</li>
+<li>Figma</li>
+<li>Notion</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section contact">
+
+<h2>Let's Connect</h2>
+
+<p>
+Interested in discussing product ideas or collaboration opportunities.
+</p>
+
+<div class="contact-links">
+
+<a href="mailto:pakkabhabad@gmail.com">Email</a>
+
+<a href="https://www.linkedin.com/in/prakash-bhabad-2b9320188/"
+target="_blank">
+LinkedIn
+</a>
+
+<a href="https://github.com/Pakkabhabad18"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 Prakash Bhabad
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</div>
+
+
+</body>
+</html>
