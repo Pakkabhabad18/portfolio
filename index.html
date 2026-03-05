@@ -1,126 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>Prakash Bhabad | Product Portfolio</title>
-
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+<title>Prakash Bhabad | Product Portfolio</title>
 
-body{
-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
-margin:0;
-background:#f6f7fb;
-color:#222;
-}
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:white;
-box-shadow:0 2px 8px rgba(0,0,0,0.05);
-}
-
-nav a{
-text-decoration:none;
-color:#333;
-margin-left:20px;
-font-size:14px;
-}
-
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-top:40px;
-}
-
-.hero-text h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero-text p{
-font-size:16px;
-color:#555;
-max-width:450px;
-}
-
-.hero img{
-width:160px;
-border-radius:50%;
-box-shadow:0 8px 30px rgba(0,0,0,0.15);
-}
-
-.section{
-margin-top:80px;
-}
-
-.section h2{
-margin-bottom:30px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:22px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
-
-.card h3{
-margin-top:0;
-}
-
-.tag{
-display:inline-block;
-background:#eef1ff;
-padding:5px 10px;
-border-radius:6px;
-font-size:12px;
-margin-top:8px;
-margin-right:5px;
-}
-
-.footer{
-margin-top:80px;
-padding:40px;
-text-align:center;
-background:white;
-}
-
-.footer a{
-text-decoration:none;
-color:#3b5cff;
-margin:0 10px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<nav>
+<!-- NAVBAR -->
 
-<b>Prakash Bhabad</b>
+<nav class="nav">
 
-<div>
+<div class="logo">Prakash Bhabad</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
 <a href="#process">Process</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
@@ -129,116 +30,236 @@ margin:0 10px;
 </nav>
 
 
-<div class="container">
 
-<div class="hero">
+<!-- HERO -->
+
+<section class="hero">
 
 <div class="hero-text">
 
-<h1>Hi, I'm Prakash 👋</h1>
+<p class="tagline">Product Management • Data Driven</p>
+
+<h1>
+Building Products that Solve
+<span>Real User Problems</span>
+</h1>
 
 <p>
-Product Management student at IIIT Hyderabad interested in building
-data-driven products. I enjoy understanding user problems,
-validating ideas through research, and designing scalable product solutions.
+M.Tech Product Design & Management student at IIIT Hyderabad.
+Passionate about product strategy, user research and building
+data-driven digital products.
 </p>
 
+<div class="hero-buttons">
+
+<a href="#projects" class="btn primary">View Projects</a>
+
+<a href="projects/Spotify Wrapped case study PPT.pdf" target="_blank" class="btn secondary">
+Featured Case Study
+</a>
+
 </div>
 
-<img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4">
-
 </div>
 
 
-<div class="section" id="process">
+<div class="hero-image">
+
+<img src="assets/My_Photo.jpg">
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<p class="about-text">
+
+I'm an aspiring Product Manager with a background in Data Science and Engineering.
+I enjoy understanding user behavior, designing product strategies, and using data
+to drive product decisions.
+
+Currently pursuing M.Tech in Product Design & Management at IIIT Hyderabad.
+
+</p>
+
+<div class="about-cards">
+
+<div class="about-card">
+<h3>User Research</h3>
+<p>Interviews, behavioral insights, problem discovery</p>
+</div>
+
+<div class="about-card">
+<h3>Product Strategy</h3>
+<p>MVP definition, prioritization, roadmapping</p>
+</div>
+
+<div class="about-card">
+<h3>Data & Analytics</h3>
+<p>Python, SQL, experimentation, insights</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROCESS -->
+
+<section id="process" class="section">
 
 <h2>My Product Process</h2>
 
-<div class="grid">
+<div class="process-grid">
 
-<div class="card">
-<b>🔍 Discover</b>
+<div class="process-card">
+<h3>🔍 Discover</h3>
 <p>User interviews, stakeholder mapping, research</p>
 </div>
 
-<div class="card">
-<b>🧠 Define</b>
-<p>Problem framing, opportunity identification</p>
+<div class="process-card">
+<h3>🧠 Define</h3>
+<p>Problem framing and opportunity identification</p>
 </div>
 
-<div class="card">
-<b>💡 Ideate</b>
-<p>Solution exploration and feature prioritization</p>
+<div class="process-card">
+<h3>💡 Ideate</h3>
+<p>Solution exploration and prioritization</p>
 </div>
 
-<div class="card">
-<b>🧪 Test</b>
-<p>Usability testing and feedback</p>
+<div class="process-card">
+<h3>🧪 Test</h3>
+<p>Prototypes, usability testing, feedback</p>
 </div>
 
-<div class="card">
-<b>📈 Measure</b>
-<p>Metrics, experiments, iteration</p>
+<div class="process-card">
+<h3>📈 Measure</h3>
+<p>Metrics, experimentation and iteration</p>
 </div>
 
 </div>
 
-</div>
+</section>
 
 
 
-<div class="section" id="projects">
+<!-- PROJECTS -->
 
-<h2>Selected Projects</h2>
+<section id="projects" class="section">
 
-<div class="grid">
+<h2>Featured Projects</h2>
 
-<div class="card">
+<div class="projects-grid">
 
-<h3>Continuum — Workforce Intelligence Platform</h3>
+<!-- Spotify -->
+
+<div class="project-card">
+
+<h3>Spotify Wrapped – Product Engagement Strategy</h3>
 
 <p>
-B2B workforce intelligence platform linking employee engagement
-initiatives to measurable business outcomes.
+Case study analyzing how Spotify leverages personalization
+and social sharing to drive user engagement.
 </p>
 
-<div class="tag">Product Strategy</div>
-<div class="tag">B2B</div>
-<div class="tag">Analytics</div>
+<div class="tags">
+<span>Product Strategy</span>
+<span>Growth</span>
+<span>Engagement</span>
+</div>
+
+<a href="projects/Spotify Wrapped case study PPT.pdf" target="_blank">
+View Case Study →
+</a>
 
 </div>
 
 
-<div class="card">
 
-<h3>Visitor Experience Improvement</h3>
+<!-- Zerodha -->
+
+<div class="project-card">
+
+<h3>Zerodha – Fintech Product Strategy</h3>
 
 <p>
-Service design project improving visitor experience through
-50+ stakeholder interviews and workflow mapping.
+Analysis of Zerodha's ecosystem, growth strategy and product moat
+in the Indian fintech landscape.
 </p>
 
-<div class="tag">User Research</div>
-<div class="tag">Service Design</div>
+<div class="tags">
+<span>Fintech</span>
+<span>Product Strategy</span>
+</div>
+
+<a href="projects/URM_Group_5.pdf" target="_blank">
+View Case Study →
+</a>
 
 </div>
 
 
-<div class="card">
 
-<h3>CivicVoice — Issue Reporting Platform</h3>
+<!-- Continuum -->
+
+<div class="project-card">
+
+<h3>Continuum – Workforce Intelligence Platform</h3>
 
 <p>
-Platform enabling citizens to report civic issues and track resolution.
+Platform connecting employee engagement initiatives with
+measurable business outcomes.
 </p>
 
-<div class="tag">Product Design</div>
-<div class="tag">MVP</div>
+<div class="tags">
+<span>B2B</span>
+<span>Product Strategy</span>
+<span>Analytics</span>
+</div>
+
+<a href="projects/Continuum Final Presentation.pdf" target="_blank">
+View Project →
+</a>
 
 </div>
 
 
-<div class="card">
+
+<!-- CivicVoice -->
+
+<div class="project-card">
+
+<h3>CivicVoice – Civic Issue Reporting Platform</h3>
+
+<p>
+Platform enabling citizens to report civic issues and track
+resolution progress.
+</p>
+
+<div class="tags">
+<span>Product Design</span>
+<span>MVP</span>
+</div>
+
+<a href="projects/CivicVoice Report.pdf" target="_blank">
+View Report →
+</a>
+
+</div>
+
+
+
+<!-- Advertising Research -->
+
+<div class="project-card">
 
 <h3>Advertising Impact Study</h3>
 
@@ -247,33 +268,82 @@ Experiment analyzing drivers of purchase intention across
 120+ survey participants.
 </p>
 
-<div class="tag">Experiments</div>
-<div class="tag">Analytics</div>
+<div class="tags">
+<span>Experiments</span>
+<span>Analytics</span>
+</div>
+
+<a href="projects/URM_Group_5.pdf" target="_blank">
+View Study →
+</a>
+
+</div>
+
+
+
+<!-- Design Thinking -->
+
+<div class="project-card">
+
+<h3>Design Thinking – IDEARC Project</h3>
+
+<p>
+Human centered design project applying the design thinking
+framework to solve real user problems.
+</p>
+
+<div class="tags">
+<span>Design Thinking</span>
+<span>UX</span>
+</div>
+
+<a href="projects/idearc_ppt.pdf" target="_blank">
+View Presentation →
+</a>
 
 </div>
 
 </div>
 
-</div>
+</section>
 
 
-<div class="footer" id="contact">
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
 
 <h2>Let's Connect</h2>
 
 <p>
+Interested in product discussions or collaborations?
+</p>
+
+<div class="contact-links">
 
 <a href="mailto:pakkabhabad@gmail.com">Email</a>
 
-<a href="https://linkedin.com/in/prakash-bhabad">LinkedIn</a>
+<a href="https://linkedin.com/in/prakash-bhabad-2b9320188" target="_blank">
+LinkedIn
+</a>
 
-<a href="https://github.com/Pakkabhabad18">GitHub</a>
-
-</p>
+<a href="https://github.com/Pakkabhabad18" target="_blank">
+GitHub
+</a>
 
 </div>
 
-</div>
+</section>
+
+
+<footer>
+
+© 2026 Prakash Bhabad
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 
